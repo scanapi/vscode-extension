@@ -1,0 +1,24 @@
+name: VSCode Marketplace Deploy / Publish
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  publish:
+    name: Publish extension to VSCode Marketplace
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Node.js and dependencies
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+      - run: yarn install
+
+      - name: Publish extension
+        run: ./node_modules/.bin/vsce publish -p $VSCE_PAT
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
