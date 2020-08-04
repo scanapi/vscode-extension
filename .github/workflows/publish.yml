@@ -12,15 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install Node.js
+      - name: Install Node.js and dependencies
         uses: actions/setup-node@v1
         with:
           node-version: "12"
-
-      - name: Setup Yarn and Install Dependencies
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install
+      - run: yarn install
 
       - name: Publish extension
         run: ./node_modules/.bin/vsce publish -p $VSCE_PAT
