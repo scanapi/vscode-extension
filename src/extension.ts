@@ -41,7 +41,8 @@ export function activate(context: vscode.ExtensionContext) {
 
       const configFileCompletion: Array<vscode.CompletionItem> = [
         new vscode.CompletionItem('report:\n\t'),
-        new vscode.CompletionItem('hide-request\n\t'),
+        new vscode.CompletionItem('hide_request\n\t'),
+        new vscode.CompletionItem('hide_response\n\t'),
         new vscode.CompletionItem('project_name: '),
         new vscode.CompletionItem('spec_path: '),
         new vscode.CompletionItem('output_path: '),
