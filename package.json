@@ -1,9 +1,9 @@
 {
-  "name": "scanapi-intellisense",
-  "displayName": "Scanapi - IntelliSense",
-  "description": "Provides code completion for the Scanapi YAML specification.",
+  "name": "scanapi",
+  "displayName": "ScanAPI",
+  "description": "Provides code completion for the ScanAPI YAML specification.",
   "icon": "images/scanapi.png",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "scanapi",
   "author": {
     "name": "abreumatheus"
