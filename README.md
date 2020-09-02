@@ -1,14 +1,17 @@
 ![](https://github.com/scanapi/design/raw/master/images/github-hero-dark.png)
 
-# Scanapi - IntelliSense
+# ScanAPI
 
-An extension that provides code completion for the [ScanApi](https://github.com/scanapi/scanapi) specification.<bR>
-Check Scanapi's [documentation](https://github.com/scanapi/scanapi) for futher information about the specification.
+An extension that provides code completion for the [ScanAPI](https://github.com/scanapi/scanapi) specification.
+
+Check ScanAPI's [documentation](https://github.com/scanapi/scanapi) for futher information about the specification.
 
 ## Installing
 
-Preferably, install it from the VSCode Marketplace, but if for some reason you can't, you can download the latest stable version [here](https://github.com/scanapi/vscode-extension/releases).<br>
-Install it using:<br>
+Preferably, install it from the VS Code Marketplace, but if for some reason you can't, you can download the latest stable version [here](https://github.com/scanapi/vscode-extension/releases).
+
+Install it using:
+
 `code --install-extension file_name_here.vsix`
 
 ## Snippets
@@ -27,5 +30,5 @@ ${custom_var} or ${ENV_VAR}
 ### `pycode`
 
 ```python
-${{assert 1 + 1 = 2}}
+${{ assert 1 + 1 == 2 }}
 ```

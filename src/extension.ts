@@ -17,7 +17,7 @@ export function activate(context: vscode.ExtensionContext) {
       const pythonCodeSnippet = new vscode.CompletionItem('pycode');
       pythonCodeSnippet.insertText = new vscode.SnippetString('${{${1}}}');
       customVarSnippet.documentation = new vscode.MarkdownString(
-        'Snippet for python code, used for the tests section:\n`${{assert 1 + 1 == 2}}`',
+        'Snippet for python code, used for example for the tests section:\n`${{assert 1 + 1 == 2}}`',
       );
 
       const mainFileSnippets: Array<vscode.CompletionItem> = [
@@ -26,21 +26,23 @@ export function activate(context: vscode.ExtensionContext) {
       ];
 
       const mainFileCompletion: Array<vscode.CompletionItem> = [
-        new vscode.CompletionItem('endpoints:\n\t- name:'),
-        new vscode.CompletionItem('requests:\n\t- name:'),
-        new vscode.CompletionItem('tests:\n\t- name:'),
-        new vscode.CompletionItem('headers:\n\t- '),
-        new vscode.CompletionItem('vars:\n\t'),
-        new vscode.CompletionItem('name: '),
-        new vscode.CompletionItem('path: '),
-        new vscode.CompletionItem('method: '),
         new vscode.CompletionItem('assert: '),
-        new vscode.CompletionItem('params: '),
+        new vscode.CompletionItem('body:\n\t '),
+        new vscode.CompletionItem('endpoints:\n\t- name: '),
+        new vscode.CompletionItem('headers:\n\t'),
+        new vscode.CompletionItem('method: '),
+        new vscode.CompletionItem('name: '),
+        new vscode.CompletionItem('params:\n\t '),
+        new vscode.CompletionItem('path: '),
+        new vscode.CompletionItem('requests:\n\t- name: '),
+        new vscode.CompletionItem('tests:\n\t- name: '),
+        new vscode.CompletionItem('vars:\n\t'),
       ];
 
       const configFileCompletion: Array<vscode.CompletionItem> = [
         new vscode.CompletionItem('report:\n\t'),
-        new vscode.CompletionItem('hide-request\n\t'),
+        new vscode.CompletionItem('hide_request\n\t'),
+        new vscode.CompletionItem('hide_response\n\t'),
         new vscode.CompletionItem('project_name: '),
         new vscode.CompletionItem('spec_path: '),
         new vscode.CompletionItem('output_path: '),
