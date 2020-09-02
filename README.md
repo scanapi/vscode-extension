@@ -8,7 +8,7 @@ Check ScanAPI's [documentation](https://github.com/scanapi/scanapi) for futher i
 
 ## Installing
 
-Preferably, install it from the VSCode Marketplace, but if for some reason you can't, you can download the latest stable version [here](https://github.com/scanapi/vscode-extension/releases).
+Preferably, install it from the VS Code Marketplace, but if for some reason you can't, you can download the latest stable version [here](https://github.com/scanapi/vscode-extension/releases).
 
 Install it using:
 
