@@ -2,12 +2,15 @@
 
 Thanks for taking the time to contribute! 🙇‍♀️🙇‍♂️ Every little bit of help counts!
 
+As one of the repositories under the `scanapi` GitHub organization, this repository follows the
+[ScanAPI Contributing Guideline](https://github.com/scanapi/contributors/blob/master/CONTRIBUTING.md).
+
 ## Install
 
 ### Requirements:
+
 - [node.js](https://nodejs.org/en/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
-
 
 Clone the repository and enter into the project's folder:
 
