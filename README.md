@@ -1,4 +1,4 @@
-![](https://github.com/scanapi/design/raw/master/images/github-hero-dark.png)
+![](https://github.com/scanapi/design/raw/main/images/github-hero-dark.png)
 
 # ScanAPI
 
